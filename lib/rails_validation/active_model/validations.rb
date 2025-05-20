@@ -1,7 +1,7 @@
 module ActiveModel
   module Validations
     def valid?(context = nil)
-      debugger
+      # debugger
       current_context = validation_context
       context_for_validation.context = context
       errors.clear

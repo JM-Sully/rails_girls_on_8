@@ -6,12 +6,12 @@ module ActiveRecord
     end
 
     def perform_validations(options = {})
-      debugger
+      # debugger
       options[:validate] == false || valid?(options[:context])
     end
 
     def valid?(context = nil)
-      debugger
+      # debugger
       context ||= default_validation_context
       output = super(context)
       errors.empty? && output
